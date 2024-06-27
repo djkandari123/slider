@@ -13,9 +13,7 @@ var days = calculateDays(new Date(), thirdEventDate) || 0;
 const countdownText = days > 0 ? `${days} days left` : 'Live Now!';
 
 var secondImageUrl = `https://ondemand.bannerbear.com/simpleurl/01YWAxB7nGYdJrKoXM/title/text/${encodeURIComponent(secondEventTitle)}`;
-var thirdImageUrl = `https://ondemand.bannerbear.com/simpleurl/ley9O0B2ZGbB4GjRDY/date/text/${encodeURIComponent(
-  thirdEventDateString
-)}/countdown/text/${encodeURIComponent(countdownText)}`;
+var thirdImageUrl = `https://ondemand.bannerbear.com/simpleurl/ley9O0B2ZGbB4GjRDY/date/text/${encodeURIComponent(thirdEventDateString)}/countdown/text/${encodeURIComponent(countdownText)}`;
 
 document.getElementById('img-2').src = secondImageUrl;
 document.getElementById('img-3').src = thirdImageUrl;
